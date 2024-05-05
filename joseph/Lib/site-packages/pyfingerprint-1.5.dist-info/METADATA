@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pyfingerprint
+Version: 1.5
+Summary: Python written library for using ZhianTec fingerprint sensors.
+Home-page: https://github.com/bastianraschke/pyfingerprint
+Author: Bastian Raschke
+Author-email: bastian.raschke@posteo.de
+Maintainer: Philipp Meisberger
+Maintainer-email: team@pm-codeworks.de
+License: D-FSL
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Requires-Dist: pyserial
+
+# Python library for ZFM fingerprint sensors
+
+The PyFingerprint library allows to use ZhianTec ZFM-20, ZFM-60, ZFM-70 and ZFM-100 fingerprint sensors on the Raspberry Pi or other Linux machines. Some other models like R302, R303, R305, R306, R307, R551 and FPM10A also work.
+
+**Note:** The library is inspired by the C++ library from Adafruit Industries:
+<https://github.com/adafruit/Adafruit-Fingerprint-Sensor-Library>
+
+## How to use the library
+
+### Enroll a new finger
+
+    ~$ python /usr/share/doc/python-fingerprint/examples/example_enroll.py
+
+### Search an enrolled finger
+
+    ~$ python /usr/share/doc/python-fingerprint/examples/example_search.py
+
+### Delete an enrolled finger
+
+    ~$ python /usr/share/doc/python-fingerprint/examples/example_delete.py
+
+### Download image of a scanned finger
+
+    ~$ python /usr/share/doc/python-fingerprint/examples/example_downloadimage.py
+
+### Generate a 32-bit random number on the ZFM hardware PRNG
+
+    ~$ python /usr/share/doc/python-fingerprint/examples/example_generaterandom.py
+
+## Further information
+
+See my blog post for more information:
+
+<https://sicherheitskritisch.de/2015/03/fingerprint-sensor-fuer-den-raspberry-pi-und-debian-linux-en/>
+
+
