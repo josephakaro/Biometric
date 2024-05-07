@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form>
+    <header><h1>Church Biometric System Registration Form</h1></header>
+    <div class="form-section">
+        <div class="personal-info">
+            <div class="names">
+                <input type="text" name="firstName", placeholder="First name" required>
+                <input type="text" name="lastName", placeholder="Last name" required>
+                <input type="text" name="OtherName", placeholder="Other names">
+            </div>
+            <div class="age-gender">
+                <input type="text" name="Gender" placeholder="Gender" required>
+                <input type="date" name="DateOfBirth" required>
+            </div>
+            <div class="contact">
+                <input type="tel" name="Phone" placeholder="Phone" required>
+                <input type="email" name="Email" placeholder="Email" required>
+            </div>
+        </div>
+        <div class="biometric-info">
+            <img src="{{url_for('static', filename='img/finger_0.png')}}" width="150px"/>
+        </div>
+    </div>
+        <div class="btn-register">
+            <button>Save</button>
+            <button>Save & New</button>
+            <button>Scan</button>
+        </div>
+</form>
+</div>
+{% endblock %}

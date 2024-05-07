@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    border: none !important;
+    border-radius: 5px !important;
+}
+
+input{
+    background-color: gainsboro;
+    color: maroon;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+
+    padding-left: 5px;
+
+    height: 35px;
+}
+
+h1{
+    font-weight: 800;
+    color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 50px auto;
+
+    padding: 20px;
+
+    width: 800px;
+    height: 500px;
+
+    background-color: white;
+
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    gap: 1em;
+}
+
+.form-section{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    width: 100%;
+    height: 60%;
+}
+
+
+.personal-info{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.biometric-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+
+    width: 100%;
+}
+
+.contact input{
+    width: 300px
+}
+
+.personal-info .names{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+
+    width: 100%;
+}
+
+.personal-info .names input{
+    width: 100px;
+}
+
+.personal-info .age-gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.personal-info .age-gender input{
+    width: 100%;   
+}
+
+.personal-info .contact input{
+    width: 100%;
+}
+
+.btn-register{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 350px;
+}
+
+.btn-register button{
+    background-color: red;
+    width: 100px;
+    height: 30px;
+
+    color: azure;
+}
