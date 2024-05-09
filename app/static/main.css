@@ -84,7 +84,7 @@ h1{
 
 .personal-info{
     display: flex;
-    flex: 1;
+    flex: 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -125,7 +125,7 @@ h1{
 }
 
 .personal-info .names input{
-    width: 100px;
+    width: 150px;
 }
 
 .personal-info .age-gender{
@@ -133,31 +133,32 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     gap: 1em;
 }
 
 .personal-info .age-gender input{
-    width: 100%;   
+    width: 100%;
+
 }
 
 .personal-info .contact input{
     width: 100%;
 }
 
-.btn-register{
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
 
-    width: 350px;
-}
 
-.btn-register button{
+.btn-register {
     background-color: red;
     width: 100px;
     height: 30px;
-
     color: azure;
-}
+    }
+    .Save-New{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        gap: 1em;
+    }

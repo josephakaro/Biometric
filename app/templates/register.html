@@ -17,22 +17,22 @@
             </div>
             <div class="age-gender">
                 <input type="text" name="Gender" placeholder="Gender" required>
-                <input type="date" name="DateOfBirth" required>
+                <input type="date" name="DateOfBirth" placeholder="Date Of Birth"  required>
             </div>
             <div class="contact">
                 <input type="tel" name="Phone" placeholder="Phone" required>
                 <input type="email" name="Email" placeholder="Email" required>
             </div>
+            <div class="Save-New">
+            <button class="btn-register">Save</button>
+            <button class="btn-register">Save & New</button>
+            </div>
         </div>
         <div class="biometric-info">
             <img src="{{url_for('static', filename='img/finger_0.png')}}" width="150px"/>
+            <button class="btn-register">Start & Scan</button>
         </div>
     </div>
-        <div class="btn-register">
-            <button>Save</button>
-            <button>Save & New</button>
-            <button>Scan</button>
-        </div>
 </form>
 </div>
 {% endblock %}
